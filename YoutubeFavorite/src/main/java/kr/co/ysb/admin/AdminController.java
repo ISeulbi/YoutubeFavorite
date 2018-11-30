@@ -78,10 +78,13 @@ public class AdminController{
 	}
 	
 	@RequestMapping(value="insertGallary", method=RequestMethod.POST)
-	public String insertGallaryPost(GallaryVO vo) {
-		System.out.println("title : " + vo.getTitle());
-		System.out.println("image : " + vo.getImg());
+	public String insertGallaryPost(GallaryVO vo, Model model) {
 		service.insertGallary(vo);
 		return "admin/insertGallary";
+	}
+	
+	@RequestMapping("gallaryList")
+	public String gallaryListGet() {
+		return "admin/gallaryList";
 	}
 }

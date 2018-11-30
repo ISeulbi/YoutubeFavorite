@@ -13,6 +13,7 @@
 <a href="insertURL">URL업로드</a>
 <a href="insertGallary">image 업로드</a>
 <a href="list">Youtube List</a>
+<a href="gallaryList">image List</a>
 <form:form action="${pageContext.request.contextPath }/logout" method="post">
 	<input type="submit" value="로그아웃" />
 </form:form>
